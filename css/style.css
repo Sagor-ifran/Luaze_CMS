@@ -2192,8 +2192,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__footer_contant .logo {
-  width: 118px;
-  height: 42px;
+  max-width: 120px;
 }
 
 .wsus__footer_contant p {
@@ -3788,9 +3787,8 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__footer_2_contant .logo {
-  width: 118px;
-  height: 42px;
   display: block;
+  max-width: 120px;
 }
 
 .wsus__footer_2_contant p {
@@ -6478,52 +6476,32 @@ header .wsus__header_right li .nice-select .option {
   PRODUCT DETAILS START
 ===================================*/
 
+.wsus__product_details_slide_show_img {
+  height: 525px;
+  margin: 0px 12px;
+}
 
+.wsus__product_details_slider_img {
+  cursor: pointer;
+  margin: 17px 12px 0px 12px;
+  border: 2px solid transparent;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
 
+.wsus__product_details .slick-current .wsus__product_details_slider_img {
+  border: 2px solid var(--colorSecondary);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wsus__product_details_slider_img:hover {
+  border-color: var(--colorSecondary);
+}
 
 .wsus__product_summary {
   margin-left: 85px;
-  height: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
 }
 
 .wsus__product_summary h2 {
@@ -6588,7 +6566,7 @@ header .wsus__header_right li .nice-select .option {
 
 .wsus__product_quantity button {
   width: 40px;
-  height: 50px;
+  height: 46px;
   background: transparent;
   font-size: 16px;
   font-weight: 500;
@@ -6610,8 +6588,8 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__product_quantity input {
-  width: 70px;
-  height: 50px;
+  width: 65px;
+  height: 46px;
   font-size: 16px;
   font-weight: 500;
   border-radius: 0px;
@@ -6637,7 +6615,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__buy_cart_button .cart {
-  padding: 15px 17px;
+  padding: 12px 14px;
   background: var(--colorSecondary);
 }
 
@@ -6647,7 +6625,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__buy_cart_button .common_btn {
-  padding: 15px 30px;
+  padding: 12px 30px;
   border-left: 1px solid var(--colorWhite);
 }
 
@@ -6692,56 +6670,705 @@ header .wsus__header_right li .nice-select .option {
   background: var(--colorPrimary);
 }
 
+.wsus__product_details_area {
+  margin-top: 112px;
+}
 
+.wsus__product_details_nav {
+  padding: 6px;
+  display: inline-flex;
+  border: 1px solid var(--BorderColor1);
+}
 
+.wsus__product_details_nav li button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 16px;
+  color: var(--colorBlack);
+  text-transform: capitalize;
+  border-radius: 0px !important;
+}
 
+.wsus__product_details_nav li button:hover {
+  color: var(--colorBlack);
+}
 
+.wsus__product_details_nav li button.active {
+  background: var(--colorSecondary);
+}
 
+.wsus__product_nav_contant {
+  margin-top: 50px;
+}
 
+.wsus__product_nav_description p {
+  font-size: 16px;
+  line-height: 28px;
+}
 
+.wsus__product_nav_description_size h1,
+.wsus__product_nav_description_size h2,
+.wsus__product_nav_description_size h3,
+.wsus__product_nav_description_size h4,
+.wsus__product_nav_description_size h5,
+.wsus__product_nav_description_size h6 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
+.wsus__product_nav_description_size h1 {
+  font-size: 34px;
+}
 
+.wsus__product_nav_description_size h2 {
+  font-size: 30px;
+}
 
+.wsus__product_nav_description_size h3 {
+  font-size: 26px;
+}
 
+.wsus__product_nav_description_size h4 {
+  font-size: 22px;
+}
 
+.wsus__product_nav_description_size h5 {
+  font-size: 18px;
+}
 
+.wsus__product_nav_description_size h6 {
+  font-size: 16px;
+}
 
+.wsus__product_nav_description_size ul,
+.wsus__product_nav_description_size ol {
+  margin-top: 20px;
+}
 
+.wsus__product_nav_description_size ul li,
+.wsus__product_nav_description_size ol li {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--HeadingFont);
+  color: #1717189e;
+  margin-top: 18px;
+  position: relative;
+  padding-left: 25px;
+}
 
+.wsus__product_nav_description_size ul li::after,
+.wsus__product_nav_description_size ol li::after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 0;
+  width: 12px;
+  height: 10px;
+  background: url(../images/arrow_3.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
 
+.wsus__product_nav_description_img {
+  padding-right: 85px;
+}
 
+.wsus__product_nav_description_size p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 40px;
+}
 
+.wsus__product_nav_add_info {
+  padding: 45px 50px 55px 50px;
+  border: 1px solid var(--BorderColor1);
+}
 
+.wsus__product_nav_add_info h1,
+.wsus__product_nav_add_info h2,
+.wsus__product_nav_add_info h3,
+.wsus__product_nav_add_info h4,
+.wsus__product_nav_add_info h5,
+.wsus__product_nav_add_info h6 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
+.wsus__product_nav_add_info h5 {
+  font-size: 36px;
+}
 
+.wsus__product_nav_add_info h2 {
+  font-size: 32px;
+}
 
+.wsus__product_nav_add_info h3 {
+  font-size: 28px;
+}
 
+.wsus__product_nav_add_info h4 {
+  font-size: 24px;
+}
 
+.wsus__product_nav_add_info h5 {
+  font-size: 20px;
+}
 
+.wsus__product_nav_add_info h6 {
+  font-size: 16px;
+}
 
+.wsus__product_nav_add_info ul,
+.wsus__product_nav_add_info ol {
+  margin-top: 30px;
+}
 
+.wsus__product_nav_add_info ul li,
+.wsus__product_nav_add_info ol li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1717189e;
+  margin-top: 18px;
+  position: relative;
+  padding-left: 25px;
+}
 
+.wsus__product_nav_add_info ul li span,
+.wsus__product_nav_add_info ol li span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1717189e;
+  width: 160px;
+  display: inline-block;
+}
 
+.wsus__product_nav_add_info ul li::after,
+.wsus__product_nav_add_info ol li::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 10px;
+  background: url(../images/arrow_3.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
 
+.wsus__product_nav_review {
+  padding: 45px 50px 60px 50px;
+  border: 1px solid var(--BorderColor1);
+}
 
+.wsus__product_nav_review h1,
+.wsus__product_nav_review h2,
+.wsus__product_nav_review h3,
+.wsus__product_nav_review h4,
+.wsus__product_nav_review h5,
+.wsus__product_nav_review h6 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
+.wsus__product_nav_review h5 {
+  font-size: 36px;
+}
 
+.wsus__product_nav_review h2 {
+  font-size: 32px;
+}
 
+.wsus__product_nav_review h3 {
+  font-size: 28px;
+}
 
+.wsus__product_nav_review h4 {
+  font-size: 24px;
+}
 
+.wsus__product_nav_review h5 {
+  font-size: 20px;
+}
 
+.wsus__product_nav_review h6 {
+  font-size: 16px;
+}
 
+.wsus__product_nav_review_item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
 
+.wsus__product_nav_review_item .img {
+  width: 60px;
+  height: 60px;
+}
 
+.wsus__product_nav_review_item .text {
+  width: 84%;
+  margin-left: 16px;
+}
 
+.wsus__product_nav_review_item .text span {
+  display: block;
+  color: var(--ratingColor);
+}
 
+.wsus__product_nav_review_item .text a {
+  font-size: 18px;
+  margin-top: 5px;
+}
 
+.wsus__product_nav_review_item .text a b {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--BodyFont);
+  text-transform: uppercase;
+  color: var(--colorBlack);
+  opacity: 0.7;
+  margin-left: 10px;
+}
 
+.wsus__product_nav_review_item .text p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 15px;
+}
 
+.wsus__product_nav_review_input {
+  margin-top: 30px;
+}
+
+.wsus__product_nav_review_textarea {
+  margin-top: 20px;
+}
+
+.wsus__product_nav_review_textarea b {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--HeadingFont);
+}
+
+.wsus__product_nav_review_textarea b span {
+  color: rgb(25 25 25 / 14%);
+}
+
+.wsus__product_nav_review_textarea textarea {
+  margin-top: 15px;
+}
+
+.wsus__product_nav_review_check {
+  margin-top: 15px;
+}
+
+.wsus__product_nav_review_check .form-check-input {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin-top: 6px;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.wsus__product_nav_review_check .form-check-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(23, 23, 24, 0.50);
+}
+
+.wsus__product_nav_review_btn {
+  margin-top: 25px;
+}
+
+.wsus__related_product_heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
 /*===================================
   PRODUCT DETAILS END
 ===================================*/
+
+
+/*===================================
+  CAREER PAGE START
+===================================*/
+.wsus__career_item {
+  position: relative;
+  margin-top: 25px;
+  padding: 28px 40px 34px 40px;
+  border: 1px solid var(--BorderColor1);
+}
+
+.wsus__career_item .title {
+  font-size: 26px;
+}
+
+.wsus__career_item_addrees {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--BorderColor1);
+}
+
+.wsus__career_item_addrees li:first-child {
+  padding: 4px 12px 4px 12px;
+  display: inline-block;
+  color: var(--colorWhite);
+  background: linear-gradient(177deg, #FF0014 -64.07%, #CC1120 98.09%);
+}
+
+.wsus__career_item_addrees li {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(23, 23, 24, 0.50);
+  text-transform: capitalize;
+}
+
+.wsus__career_item_addrees li span {
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  margin-right: 2px;
+  position: relative;
+  top: -2px;
+}
+
+
+.wsus__career_item p {
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: 12px;
+}
+
+.wsus__career_item_btn {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.wsus__career_item_btn li {
+  width: 49%;
+}
+
+.wsus__career_item_btn li .common_btn {
+  width: 100%;
+  text-align: center;
+}
+
+.wsus__career_item .bagde {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 11px 12px;
+  line-height: 12px;
+  background: #EFF0F3;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.wsus__career_item .bagde:hover {
+  background: var(--colorPrimary);
+}
+
+.wsus__career_item .bagde:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(174deg) brightness(102%) contrast(102%);
+}
+
+/*===================================
+  CAREER PAGE END
+===================================*/
+
+
+
+/*===================================
+  CAREER DETAILS START
+===================================*/
+
+.wsus__career_details_img {
+  height: 570px;
+}
+
+.wsus__career_details_addrees ul {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.wsus__career_details_addrees ul li:first-child {
+  padding: 4px 12px 4px 12px;
+  display: inline-block;
+  color: var(--colorWhite);
+  background: linear-gradient(177deg, #FF0014 -64.07%, #CC1120 98.09%);
+}
+
+.wsus__career_details_addrees ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(23, 23, 24, 0.50);
+  text-transform: capitalize;
+}
+
+.wsus__career_details_addrees ul li span {
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.wsus__career_details_addrees h1,
+.wsus__career_details_addrees h2,
+.wsus__career_details_addrees h3,
+.wsus__career_details_addrees h4,
+.wsus__career_details_addrees h5,
+.wsus__career_details_addrees h6 {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--BorderColor1);
+}
+
+.wsus__career_details_addrees h1 {
+  font-size: 42px;
+}
+
+.wsus__career_details_addrees h2 {
+  font-size: 38px;
+}
+
+.wsus__career_details_addrees h3 {
+  font-size: 34px;
+}
+
+.wsus__career_details_addrees h4 {
+  font-size: 30px;
+}
+
+.wsus__career_details_addrees h5 {
+  font-size: 26px;
+}
+
+.wsus__career_details_addrees h6 {
+  font-size: 22px;
+}
+
+.wsus__career_details_addrees p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 22px;
+}
+
+.wsus__career_details_text h1,
+.wsus__career_details_text h2,
+.wsus__career_details_text h3,
+.wsus__career_details_text h4,
+.wsus__career_details_text h5,
+.wsus__career_details_text h6 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 55px;
+}
+
+.wsus__career_details_text h1 {
+  font-size: 42px;
+}
+
+.wsus__career_details_text h2 {
+  font-size: 38px;
+}
+
+.wsus__career_details_text h3 {
+  font-size: 34px;
+}
+
+.wsus__career_details_text h4 {
+  font-size: 30px;
+}
+
+.wsus__career_details_text h5 {
+  font-size: 26px;
+}
+
+.wsus__career_details_text h6 {
+  font-size: 22px
+}
+
+.wsus__career_details_text h4 span {
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.wsus__career_details_text ul,
+.wsus__career_details_text ol {
+  margin-top: 38px;
+}
+
+.wsus__career_details_text ul li,
+.wsus__career_details_text ol li {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  position: relative;
+  padding-left: 26px;
+  display: flex;
+  align-items: center;
+  color: rgb(23 23 24 / 70%);
+}
+
+.wsus__career_details_text ul li::after,
+.wsus__career_details_text ol li::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url(../images/checkbox.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.wsus__career_details_text .common_btn {
+  margin-top: 68px;
+}
+
+/*===================================
+  CAREER DETAILS END
+===================================*/
+
+
+/*===================================
+  JOB APPLY START
+===================================*/
+
+.wsus__job_apply_area h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.wsus__job_apply_form {
+  margin-top: 16px;
+}
+
+.wsus__job_apply_input {
+  margin-top: 20px;
+}
+
+.wsus__job_apply_input label {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--colorBlack);
+  font-family: var(--HeadingFont);
+  margin-bottom: 5px;
+}
+
+.wsus__job_apply_checkbox {
+  margin-top: 15px;
+}
+
+.wsus__job_apply_checkbox p {
+  font-size: 14px;
+  color: #DC3545;
+}
+
+.wsus__job_apply_checkbox .form-check {
+  margin-top: 12px;
+}
+
+.wsus__job_apply_checkbox .form-check-input {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin-top: 6px;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.wsus__job_apply_checkbox .form-check-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(23, 23, 24, 0.50);
+}
+
+.wsus__job_apply_btn {
+  margin-top: 45px;
+}
+
+/*===================================
+  JOB APPLY END
+===================================*/
+
+
+
+/*===================================
+  FAQ PAGE START
+===================================*/
+
+
+.wsus__faq_page {
+  background: transparent;
+}
+
+/*===================================
+  FAQ PAGE END
+===================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

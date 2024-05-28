@@ -546,7 +546,7 @@ $(function () {
 
 
 
-    // barfiller js
+    //=======BARFILLER JS======
     $(document).ready(function () {
         $('#bar1').barfiller({});
         $('#bar2').barfiller({});
@@ -555,10 +555,30 @@ $(function () {
     });
 
 
+    //=======PRODUCT DETAILS SLIDER======
+    $('.slider-forFive').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.slider-navFive',
+    });
+
+    $('.slider-navFive').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-forFive',
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: 0,
+    });
 
 
-
-
+    //=======SELECT_2 JS======
+    $(document).ready(function () {
+        $('.select_2').select2();
+    });
 
 
 
