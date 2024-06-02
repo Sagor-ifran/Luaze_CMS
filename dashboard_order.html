@@ -104,7 +104,7 @@
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="products.html">Shop</a>
+                    <a class="nav-link" href="products.html">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="pricing.html">Pricing</a>
@@ -231,15 +231,14 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="wsus___breadcrumb_text">
-                            <h1>Shop Page</h1>
+                            <h1>Dashboard</h1>
                             <ul>
                                 <li>
                                     <a href="index.html">
                                         <span><img src="images/home.png" alt="icon" class="img-fluid w-100"></span>
-                                        Home
-                                    </a>
+                                        Home</a>
                                 </li>
-                                <li>Shop Page</li>
+                                <li>Dashboard</li>
                             </ul>
                         </div>
                     </div>
@@ -253,260 +252,219 @@
 
 
     <!--============================
-        PRODUCTS PAGE START
-    ==============================-->
-    <section class="wsus__products_page pt_95 xs_pt_75 pb_120 xs_pb_100">
+        DASHBOARD ORDER START
+    =============================-->
+    <section class="wsus__dashboard pt_120 xs_pt_100 pb_120 xs_pb_100">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_1.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#"><i class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
+                <div class="col-xl-3 wow fadeInUp">
+                    <div class="wsus__dashboard_sidebar">
+                        <div class="wsus__dashboard_sidebar_top">
+                            <div class="wsus__dashboard_profile_img wow fadeInUp">
+                                <img src="images/dashboard_profile_img.jpg" alt="profile" class="img-fluid w-100">
+                                <label for="profile_photo"><i class="fal fa-camera-alt" aria-hidden="true"></i></label>
+                                <input type="file" id="profile_photo" hidden="">
+                            </div>
+                            <h5>Curtis Campher</h5>
+                            <p>Washington DC, USA.</p>
                         </div>
-                        <div class="text">
-                            <a href="product_details.html" class="title">Stereo Gaming Headset</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
+                        <ul class="wsus__deshboard_menu wow fadeInUp">
+                            <li>
+                                <a href="dashboard_profile.html"><i class="fas fa-user-tie" aria-hidden="true"></i>
+                                    profile</a>
+                            </li>
+                            <li>
+                                <a class="active" href="dashboard_order.html"><i class="fas fa-cart-plus"
+                                        aria-hidden="true"></i>
+                                    order</a>
+                            </li>
+                            <li>
+                                <a href="dashboard_wishlist.html"><i class="fas fa-heart" aria-hidden="true"></i>
+                                    wishlist</a>
+                            </li>
+                            <li>
+                                <a href="dashboard_pricing.html"><i class="fas fa-badge-dollar" aria-hidden="true"></i>
+                                    pricing
+                                    plan</a>
+                            </li>
+                            <li>
+                                <a href="dashboard_review.html"><i class="fas fa-star" aria-hidden="true"></i>
+                                    reviews</a>
+                            </li>
+                            <li>
+                                <a href="dashboard_change_password.html"><i class="fas fa-key"></i>
+                                    change Password</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-unlock-alt" aria-hidden="true"></i> log out</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_2.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#"><i class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
+                <div class="col-xl-9 wow fadeInUp">
+                    <div class="wsus__dashboard_main_contant wow fadeInUp">
+                        <h4>Order</h4>
+                        <div class="wsus__dashboard_order">
+                            <div class="row">
+                                <div class="col-12 wow fadeInUp">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="serial">serial</th>
+                                                    <th class="package">package/product</th>
+                                                    <th class="p_date">Purchase Date</th>
+                                                    <th class="e_date">Expired Date</th>
+                                                    <th class="price">Price</th>
+                                                    <th class="action">action</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">1</td>
+                                                    <td class="package">one day pass </td>
+                                                    <td class="p_date">26-02-2024</td>
+                                                    <td class="e_date">27-04-2024</td>
+                                                    <td class="price">free</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">2</td>
+                                                    <td class="package">monthly pass</td>
+                                                    <td class="p_date">20-03-2024</td>
+                                                    <td class="e_date">21-04-2024</td>
+                                                    <td class="price">$150</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">3</td>
+                                                    <td class="package active_package">
+                                                        annual pass
+                                                    </td>
+                                                    <td class="p_date">20-01-2024</td>
+                                                    <td class="e_date">20-01-2025</td>
+                                                    <td class="price">$450</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">4</td>
+                                                    <td class="package">special pass</td>
+                                                    <td class="p_date">10-05-2024</td>
+                                                    <td class="e_date">30-02-2026</td>
+                                                    <td class="price">$1990</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">5</td>
+                                                    <td class="package">one day pass </td>
+                                                    <td class="p_date">26-02-2024</td>
+                                                    <td class="e_date">27-04-2024</td>
+                                                    <td class="price">free</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">6</td>
+                                                    <td class="package">monthly pass</td>
+                                                    <td class="p_date">20-03-2024</td>
+                                                    <td class="e_date">21-04-2024</td>
+                                                    <td class="price">$150</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">7</td>
+                                                    <td class="package">
+                                                        annual pass
+                                                    </td>
+                                                    <td class="p_date">20-01-2024</td>
+                                                    <td class="e_date">20-01-2025</td>
+                                                    <td class="price">$450</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">8</td>
+                                                    <td class="package">special pass</td>
+                                                    <td class="p_date">10-05-2024</td>
+                                                    <td class="e_date">30-02-2026</td>
+                                                    <td class="price">$1990</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">9</td>
+                                                    <td class="package">one day pass </td>
+                                                    <td class="p_date">26-02-2024</td>
+                                                    <td class="e_date">27-04-2024</td>
+                                                    <td class="price">free</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">10</td>
+                                                    <td class="package">monthly pass</td>
+                                                    <td class="p_date">20-03-2024</td>
+                                                    <td class="e_date">21-04-2024</td>
+                                                    <td class="price">$150</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">11</td>
+                                                    <td class="package">
+                                                        annual pass
+                                                    </td>
+                                                    <td class="p_date">20-01-2024</td>
+                                                    <td class="e_date">20-01-2025</td>
+                                                    <td class="price">$450</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">12</td>
+                                                    <td class="package">special pass</td>
+                                                    <td class="p_date">10-05-2024</td>
+                                                    <td class="e_date">30-02-2026</td>
+                                                    <td class="price">$1990</td>
+                                                    <td class="action"><a href="dashboard_invoice.html"><i
+                                                                class="far fa-eye" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 wow fadeInUp">
+                                    <div class="wsus__pagination mt_60">
+                                        <nav aria-label="...">
+                                            <ul class="pagination">
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="far fa-arrow-left"></i></a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="far fa-arrow-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <span class="new">new</span>
-                        <div class="text">
-                            <a href="product_details.html" class="title">iphone 15 pro max</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_3.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#"><i class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="text">
-                            <a href="product_details.html" class="title">Smart Watch for Men</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_4.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                            class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="text">
-                            <a href="product_details.html" class="title">Gaming Chair</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_6.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                            class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <span class="new">new</span>
-                        <div class="text">
-                            <a href="product_details.html" class="title">Beats Studio Buds</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_5.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                            class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="text">
-                            <a href="product_details.html" class="title">LG gram 14” 2in1</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_7.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                            class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="text">
-                            <a href="product_details.html" class="title">Cat Daddy - T-Shirt</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="wsus__product_item">
-                        <div class="img">
-                            <img src="images/product_8.jpg" alt="equipment" class="img-fluid w-100">
-                            <a href="#" class="add_cart">
-                                <span><img src="images/cart_3.png" alt="cart" class="img-fluid w-100"></span>
-                                Add To Cart
-                            </a>
-                            <ul>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                            class="far fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fal fa-heart" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="far fa-random" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <span class="new">new</span>
-                        <div class="text">
-                            <a href="product_details.html" class="title">Electric kettle</a>
-                            <p>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </p>
-                            <h4><del>$160.00</del>$120.00</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 wow fadeInUp">
-                    <div class="wsus__pagination mt_60">
-                        <nav aria-label="...">
-                            <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="far fa-arrow-left"></i></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link active" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="far fa-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--============================
-        PRODUCTS PAGE END
-    ==============================-->
+        DASHBOARD ORDER END
+    =============================-->
 
 
     <!--============================

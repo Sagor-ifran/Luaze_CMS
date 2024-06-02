@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/animated_barfiller.css">
     <link rel="stylesheet" href="css/select2.min.css">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -86,41 +86,58 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home<i class="far fa-angle-down"></i></a>
+                    <a class="nav-link" href="#">Home<i class="far fa-angle-down"></i></a>
                     <ul class="wsus__droap_menu">
-                        <li><a href="index.html" class="active">Home style 01</a></li>
+                        <li><a href="index.html">Home style 01</a></li>
                         <li><a href="index_2.html">Home style 02</a></li>
                         <li><a href="index_3.html">Home style 03</a></li>
                         <li><a href="index_4.html">Home style 04</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link" href="about.html">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="service.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="products.html">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="pricing.html">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">pages<i class="far fa-angle-down"></i></a>
+                    <a class="nav-link active" href="#">pages<i class="far fa-angle-down"></i></a>
                     <ul class="wsus__droap_menu">
-                        <li><a href="#">pages one</a></li>
-                        <li><a href="#">pages one</a></li>
-                        <li><a href="#">pages one</a></li>
-                        <li><a href="#">pages one</a></li>
-                        <li><a href="#">pages one</a></li>
-                        <li><a href="#">pages one</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="checkout.html">checkout</a></li>
+                        <li><a href="event.html">event</a></li>
+                        <li><a href="team.html">team</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="career.html">career</a></li>
+                        <li><a href="shoping_cart.html">shoping Cart</a></li>
+                        <li><a href="job_apply.html">Career Apply</a></li>
+                        <li><a href="photo_gallery.html">photo gallery</a></li>
+                        <li><a href="video_gallery.html">Vedio gallery</a></li>
+                        <li><a href="blog_details.html">blog details</a></li>
+                        <li><a href="career_details.html">career details</a></li>
+                        <li><a href="event_details.html">event details</a></li>
+                        <li><a href="portfolio_details.html">portfolio details</a></li>
+                        <li><a href="product_details.html">product details</a></li>
+                        <li><a href="service_details.html">service details</a></li>
+                        <li><a href="team_details.html">team details</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="registration.html">registration</a></li>
+                        <li><a href="forgot_password.html">forgot password</a></li>
+                        <li><a href="privacy_policy.html" class="active">privacy Policy</a></li>
+                        <li><a href="terms_condition.html">terms and condition</a></li>
+                        <li><a href="error.html">error</a></li>
                     </ul>
                 </li>
             </ul>
@@ -133,7 +150,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="common_btn">
+                        <a href="dashboard_profile.html" class="common_btn">
                             <span><img src="images/user.png" alt="user" class="img-fluid w-100"></span>
                             Profile
                         </a>
@@ -142,8 +159,7 @@
             </div>
         </div>
     </nav>
-    <div class="offcanvas offcanvas-end wsus__offcanvas" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end wsus__offcanvas" tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="fal fa-times" aria-hidden="true"></i>
@@ -151,7 +167,7 @@
         </div>
         <div class="offcanvas-body">
             <div class="wsus__offcanvas_cart">
-                <h5>Cart Items <a href="cart.html">View Cart</a></h5>
+                <h5>Cart Items <a href="shoping_cart.html">View Cart</a></h5>
                 <ul class="wsus__offcanvas_cart_list">
                     <li>
                         <a href="#" class="img">
@@ -427,6 +443,17 @@
     ==============================-->
 
 
+    <!--============================
+        SCROLLBAR START
+    ==============================-->
+    <a id="button">
+        <div class="scroller"></div>
+    </a>
+    <!--============================
+        SCROLLBAR END
+    ==============================-->
+
+
     <!--jquery library js-->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!--bootstrap js-->
@@ -438,8 +465,8 @@
     <script src="js/venobox.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countup.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
     <script src="js/select2.min.js"></script>
-
     <!--main js-->
     <script src="js/main.js"></script>
 </body>
