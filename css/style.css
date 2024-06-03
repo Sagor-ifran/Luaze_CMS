@@ -507,7 +507,8 @@ button {
   bottom: 4px;
   left: 4px;
   top: 34px;
-  animation: scroller 1500ms ease-out infinite;
+  animation: scroller 3500ms ease-out infinite;
+  -webkit-animation: scroller 3500ms ease-out infinite;
 }
 
 @keyframes scroller {
@@ -791,6 +792,10 @@ header .wsus__header_right li::after {
   right: 0;
 }
 
+header .wsus__header_right li:first-child .nice-select {
+  padding-left: 0;
+}
+
 header .wsus__header_right li:last-child:after {
   display: none;
 }
@@ -813,7 +818,7 @@ header .wsus__header_right li .nice-select:after {
 
 header .wsus__header_right li .nice-select .list {
   margin-top: -2px;
-  left: 20px;
+  left: 0px;
   width: auto;
   padding: 10px 0px;
 }
@@ -949,7 +954,7 @@ header .wsus__header_right li .nice-select .option {
   height: 0px;
   background: var(--colorPrimary);
   top: 50%;
-  right: 0px;
+  left: 0px;
   opacity: 0;
   transform: translateY(-50%);
   transition: all 0.3s linear 0s;
@@ -967,7 +972,7 @@ header .wsus__header_right li .nice-select .option {
 .main_menu .wsus__droap_menu li a.active::after {
   opacity: 1;
   height: 20px;
-  right: 0px;
+  left: 0px;
 }
 
 .main_menu .nav-item:hover .wsus__droap_menu {
@@ -1631,7 +1636,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__team_item:hover {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .wsus__team_item .img {
@@ -2157,13 +2162,10 @@ header .wsus__header_right li .nice-select .option {
 
 .wsus__newsletter_area {
   overflow: hidden;
-  padding: 48px 80px 48px 80px;
-  background: var(--colorPrimary);
-}
-
-.wsus__newsletter_area {
   position: relative;
   z-index: 1;
+  padding: 48px 80px 48px 80px;
+  background: var(--colorPrimary);
 }
 
 .wsus__newsletter_area::after {
@@ -2607,6 +2609,10 @@ header .wsus__header_right li .nice-select .option {
   margin-left: 2px;
 }
 
+.main_menu_2 .wsus__droap_menu {
+  border-top: none;
+}
+
 .main_menu_2 .navbar-nav {
   gap: 32px;
 }
@@ -2677,22 +2683,25 @@ header .wsus__header_right li .nice-select .option {
 
 .wsus__banner_2_contant p {
   margin-top: 35px;
-  display: flex;
-  align-items: center;
-}
-
-.wsus__banner_2_contant p img {
-  width: 32px !important;
-  height: 42px !important;
-}
-
-.wsus__banner_2_contant p span {
-  display: block;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
   color: rgba(255, 255, 255, 0.70);
-  margin-left: 20px;
+  padding-left: 52px;
+  position: relative;
+}
+
+.wsus__banner_2_contant p::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  width: 32px;
+  height: 42px;
+  background: url(../images/arrow_2.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 .wsus__banner_2_contant .common_btn {
@@ -3187,6 +3196,24 @@ header .wsus__header_right li .nice-select .option {
   color: var(--colorWhite);
   background: var(--colorSecondary);
   border-radius: 50%;
+}
+
+.wsus__video_icon a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 23, 24, 0.70);
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  z-index: -1;
+  animation: 2s ease 0s infinite normal none running play_btn_animi;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-animation: 2s ease 0s infinite normal none running play_btn_animi;
 }
 
 .wsus__video_text {
@@ -4331,6 +4358,38 @@ header .wsus__header_right li .nice-select .option {
 .wsus__about_3_img {
   height: 565px;
   padding-right: 87px;
+  position: relative;
+  z-index: 1;
+}
+
+.wsus__about_3_img::after {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 25px;
+  width: 365px;
+  height: 330px;
+  background: url(../images/about_3_shape_2.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: -1;
+  animation: left_right_animi linear 3s infinite alternate;
+  -webkit-animation: left_right_animi linear 3s infinite alternate;
+}
+
+.wsus__about_3_img::before {
+  position: absolute;
+  content: "";
+  bottom: 100px;
+  right: 110px;
+  width: 195px;
+  height: 170px;
+  background: url(../images/about_3_shape_1.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: -1;
   animation: left_right_animi linear 3s infinite alternate;
   -webkit-animation: left_right_animi linear 3s infinite alternate;
 }
