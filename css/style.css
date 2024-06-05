@@ -3042,6 +3042,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__about_2_img {
+  height: 610px;
   padding-right: 50px;
   position: relative;
   margin-bottom: 100px;
@@ -3479,6 +3480,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__testimonial_reviewer .text {
+  width: 70%;
   margin-left: 45px;
 }
 
@@ -4286,6 +4288,7 @@ header .wsus__header_right li .nice-select .option {
 /* service 3 start */
 
 .wsus__service_3_item {
+  margin-top: 25px;
   border: 1px solid var(--BorderColor1);
 }
 
