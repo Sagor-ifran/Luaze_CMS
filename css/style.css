@@ -6686,6 +6686,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__product_details_slider_img {
+  height: 85px;
   cursor: pointer;
   margin: 17px 12px 0px 12px;
   border: 2px solid transparent;
@@ -6975,6 +6976,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__product_nav_description_img {
+  height: 440px;
   padding-right: 85px;
 }
 

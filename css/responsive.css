@@ -670,12 +670,62 @@
     ===================================*/
 
 
+    /*===================================
+        PRODUCT DETAILS START
+    ===================================*/
+
+    .wsus__product_details_slide_show_img {
+        height: 450px;
+    }
+
+    .wsus__product_details_slider_img {
+        height: 80px;
+        margin: 17px 8px 0px 8px;
+    }
+
+    .wsus__product_nav_description_img {
+        height: 365px;
+    }
+
+    /*===================================
+        PRODUCT DETAILS END
+    ===================================*/
 
 
 
+    /*===================================
+        SERVICE DETAILS START
+    ===================================*/
+
+    .wsus__service_details_contant .service_img {
+        height: 320px;
+    }
+
+    .wsus__service_details_contant .service_video {
+        height: 390px;
+    }
+
+    /*===================================
+        SERVICE DETAILS END
+    ===================================*/
 
 
+    /*===================================
+        TEAM DETAILS START
+    ===================================*/
 
+    .wsus__team_members_info .img {
+        height: 370px;
+    }
+
+    .wsus__team_details_contant_top span {
+        width: 88%;
+    }
+
+
+    /*===================================
+        TEAM DETAILS END
+    ===================================*/
 
 
 
@@ -1299,9 +1349,69 @@
     ===================================*/
 
 
+    /*===================================
+        PRODUCT DETAILS START
+    ===================================*/
+
+    .wsus__product_details_slide_show_img {
+        height: 375px;
+    }
+
+    .wsus__product_summary h2 {
+        font-size: 40px;
+    }
+
+    .wsus__product_details_slider_img {
+        height: 70px;
+    }
+
+    .wsus__product_nav_description_img {
+        height: 300px;
+    }
+
+    /*===================================
+        PRODUCT DETAILS END
+    ===================================*/
 
 
 
+    /*===================================
+        SERVICE DETAILS START
+    ===================================*/
+
+    .wsus__service_details_contant .service_img {
+        height: 400px;
+    }
+
+    .wsus__service_details_contant .service_video {
+        height: 500px;
+    }
+
+    /*===================================
+        SERVICE DETAILS END
+    ===================================*/
+
+
+
+    /*===================================
+        TEAM DETAILS START
+    ===================================*/
+
+    .wsus__team_members_info .img {
+        height: 390px;
+    }
+
+    .wsus__team_details_contant_top span {
+        width: 82%;
+    }
+
+    .wsus__team_details_barfiller_item {
+        width: 100%;
+    }
+
+    /*===================================
+        TEAM DETAILS END
+    ===================================*/
 
 
 
@@ -2024,7 +2134,126 @@
 
 
 
+    /*===================================
+        PRODUCT DETAILS START
+    ===================================*/
 
+    .wsus__product_details_slide_show_img {
+        height: 690px;
+    }
+
+    .wsus__product_details_slider_img {
+        height: 120px;
+    }
+
+    .wsus__product_summary {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .wsus__product_summary h2 {
+        font-size: 40px;
+    }
+
+    .wsus__product_nav_description_img {
+        height: 690px;
+        padding-right: 0;
+    }
+
+    .wsus__product_nav_description_img {
+        height: 690px;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    /*===================================
+        PRODUCT DETAILS END
+    ===================================*/
+
+
+    /*===================================
+        SERVICE DETAILS START
+    ===================================*/
+
+    .wsus__service_details_contant .service_img {
+        height: 300px;
+    }
+
+    .wsus__service_details_contant .service_video {
+        height: 370px;
+    }
+
+    /*===================================
+        SERVICE DETAILS END
+    ===================================*/
+
+
+
+    /*===================================
+        TEAM DETAILS START
+    ===================================*/
+
+    .wsus__team_members_info .img {
+        height: 775px;
+    }
+
+    .wsus__team_details_contant {
+        margin-left: 0;
+    }
+
+    .wsus__team_details_contant_top span {
+        width: 85%;
+    }
+
+    /*===================================
+        TEAM DETAILS END
+    ===================================*/
+
+
+
+    /*===================================
+        DASHBOARD START
+    ===================================*/
+
+    .wsus__profile_overview h4 {
+        font-size: 26px !important;
+    }
+
+    .wsus__profile_overview {
+        padding: 32px 20px 25px 20px;
+    }
+
+    .wsus__profile_overview .name {
+        font-size: 16px;
+    }
+
+    .wsus__profile_info {
+        padding: 30px 20px 33px 20px;
+    }
+
+    .wsus__profile_info ul li span {
+        width: 110px;
+    }
+
+    .wsus__profile_info_top .common_btn {
+        margin-top: 10px;
+    }
+
+    .wsus__dashboard_invoice_logo {
+        display: none;
+    }
+
+    .wsus__dashboard_invoice_left h5 {
+        font-size: 14px;
+    }
+
+    .wsus__dashboard_review .wsus__product_nav_review_item .text {
+        width: 80%;
+    }
+
+    /*===================================
+        DASHBOARD END
+    ===================================*/
 
 
 
@@ -3006,6 +3235,117 @@
     /*===================================
         ERROR END
     ===================================*/
+
+
+
+    /*===================================
+        PRODUCT DETAILS START
+    ===================================*/
+
+    .wsus__product_details_slide_show_img {
+        height: 510px;
+    }
+
+    .wsus__product_details_slider_img {
+        height: 84px;
+    }
+
+    .wsus__product_summary {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .wsus__product_summary h2 {
+        font-size: 40px;
+    }
+
+    .wsus__product_nav_description_img {
+        height: 510px;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .wsus__product_nav_review {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .wsus__product_nav_review_item .text {
+        width: 82%;
+    }
+
+    /*===================================
+        PRODUCT DETAILS END
+    ===================================*/
+
+
+    /*===================================
+        SERVICE DETAILS START
+    ===================================*/
+
+    .wsus__service_details_contant .service_img {
+        height: 250px;
+    }
+
+    .wsus__service_details_contant .service_video {
+        height: 300px;
+    }
+
+    /*===================================
+        SERVICE DETAILS END
+    ===================================*/
+
+
+    /*===================================
+        TEAM DETAILS START
+    ===================================*/
+
+    .wsus__team_members_info .img {
+        height: 560px;
+    }
+
+    .wsus__team_details_contant {
+        margin-left: 0;
+    }
+
+    .wsus__team_details_contant_top span {
+        width: 85%;
+    }
+
+    .wsus__team_details_barfiller_item {
+        width: 100%;
+    }
+
+    /*===================================
+        TEAM DETAILS END
+    ===================================*/
+
+
+
+    /*===================================
+        DASHBOARD START
+    ===================================*/
+
+    .wsus__dashboard_main_contant {
+        margin-top: 60px;
+    }
+
+    .wsus__dashboard_invoice_right {
+        text-align: left;
+    }
+
+    .wsus__dashboard_invoice_logo {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    /*===================================
+        DASHBOARD END
+    ===================================*/
+
+
+
+
+
 
 
 
@@ -4123,7 +4463,7 @@
     }
 
     .wsus__event_details_contant .img_2 {
-        height: auto;
+        height: 600px;
     }
 
     .wsus__event_details_info li .text {
@@ -4232,9 +4572,155 @@
     ===================================*/
 
 
+    /*===================================
+        PRODUCT DETAILS START
+    ===================================*/
+
+    .wsus__product_details_slide_show_img {
+        height: auto;
+    }
+
+    .wsus__product_details_slider_img {
+        height: auto;
+        margin: 17px 5px 0px 5px;
+    }
+
+    .wsus__product_summary {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .wsus__product_summary h2 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .wsus__buy_cart_button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .wsus__product_details_nav li button {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+
+    .wsus__product_nav_description_img {
+        height: auto;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .wsus__product_nav_add_info {
+        padding: 15px 20px 25px 20px;
+    }
+
+    .wsus__product_nav_add_info h4 {
+        font-size: 20px;
+    }
+
+    .wsus__product_nav_review {
+        padding: 25px 20px 20px 20px;
+    }
+
+    .wsus__product_nav_review_item .text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
 
 
+    /*===================================
+        PRODUCT DETAILS END
+    ===================================*/
 
+
+    /*===================================
+        SERVICE DETAILS START
+    ===================================*/
+
+    .wsus__service_details_contant .service_img {
+        height: auto;
+    }
+
+    .wsus__service_details_contant h2 {
+        font-size: 26px;
+    }
+
+    .wsus__service_details_contant .service_video {
+        height: 300px;
+    }
+
+    /*===================================
+        SERVICE DETAILS END
+    ===================================*/
+
+
+    /*===================================
+        TEAM DETAILS START
+    ===================================*/
+
+    .wsus__team_members_info .img {
+        height: auto;
+    }
+
+    .wsus__team_details_contant {
+        margin-left: 0;
+    }
+
+    .wsus__team_details_contant_top span {
+        width: 72%;
+    }
+
+    .wsus__team_details_barfiller_item {
+        width: 100%;
+    }
+
+    /*===================================
+        TEAM DETAILS END
+    ===================================*/
+
+
+    /*===================================
+        DASHBOARD START
+    ===================================*/
+
+    .wsus__dashboard_main_contant {
+        margin-top: 60px;
+    }
+
+    .wsus__profile_overview h4 {
+        font-size: 30px !important;
+    }
+
+    .wsus__profile_info {
+        padding: 30px 20px 33px 20px;
+    }
+
+    .wsus__dashboard_main_contant h4 {
+        font-size: 24px;
+    }
+
+    .wsus__profile_info_top .common_btn {
+        margin-top: 10px;
+    }
+
+    .wsus__profile_info ul li span {
+        width: 100%;
+    }
+
+    .wsus__dashboard_invoice_right {
+        text-align: left;
+    }
+
+    .wsus__dashboard_invoice_logo {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    /*===================================
+        DASHBOARD END
+    ===================================*/
 
 
 
