@@ -81,7 +81,6 @@ button {
   border: none;
 }
 
-
 :root {
   --colorPrimary: #3ABC4F;
   --colorSecondary: #336AEA;
@@ -96,22 +95,6 @@ button {
   --HeadingFont: "Rufina", serif;
   --HeadingFont2: "Roboto", sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .common_btn {
   position: relative;
@@ -139,7 +122,6 @@ button {
   position: relative;
   top: -2px;
 }
-
 
 .common_btn:after {
   position: absolute;
@@ -170,35 +152,6 @@ button {
   background: var(--colorSecondary);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wsus__section_heading h5,
 .wsus__section_heading h5 span {
   font-size: 14px;
@@ -225,7 +178,6 @@ button {
   text-align: center;
 }
 
-
 .wsus__section_heading_2 h6 {
   font-size: 14px;
   font-weight: 600;
@@ -242,7 +194,6 @@ button {
   font-family: var(--HeadingFont2);
   text-transform: uppercase;
 }
-
 
 .wsus__section_heading_3 h6 {
   font-size: 14px;
@@ -263,19 +214,6 @@ button {
   text-transform: uppercase;
   margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .title {
   display: block;
@@ -312,19 +250,6 @@ button {
   color: var(--colorPrimary);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .link {
   font-size: 16px;
   font-weight: 700;
@@ -355,29 +280,6 @@ button {
 .link:hover i {
   margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .nextArrow,
 .prevArrow {
@@ -416,9 +318,8 @@ button {
 }
 
 
-
-
 /* pagination start */
+
 .wsus__pagination ul {
   gap: 15px;
 }
@@ -538,6 +439,59 @@ button {
 /* scrollbar end */
 
 
+/* cursor animation start */
+
+.cursor {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none;
+  border: 1px solid var(--colorPrimary);
+  transition: all 0.2s ease-out;
+  animation: moveCursor1 .5s infinite alternate;
+  z-index: 99999;
+}
+
+.expand {
+  background: transparent;
+  animation: moveCursor2 .5s forwards;
+  border: 1px solid var(--colorPrimary);
+}
+
+@keyframes moveCursor1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* cursor animation end */
+
+
 /* playbutton start */
 
 .play_btn {
@@ -583,12 +537,6 @@ button {
 /* playbutton end */
 
 
-
-
-
-
-
-
 @keyframes play_btn_animi {
   0% {
     opacity: 1;
@@ -609,7 +557,6 @@ button {
   }
 }
 
-
 @keyframes zoom_animi {
   from {
     transform: scale(1);
@@ -627,8 +574,6 @@ button {
     -o-transform: scale(1.05);
   }
 }
-
-
 
 @keyframes circle_animi {
   from {
@@ -648,9 +593,6 @@ button {
   }
 }
 
-/* animation: circle_animi linear 25s infinite;
--webkit-animation: circle_animi linear 25s infinite; */
-
 @keyframes left_right_animi {
   from {
     transform: translate(0);
@@ -668,9 +610,6 @@ button {
     -o-transform: translateX(-40px);
   }
 }
-
-/* animation: left_right_animi linear 3s infinite alternate;
--webkit-animation: left_right_animi linear 3s infinite alternate; */
 
 @keyframes updown_animi {
   from {
@@ -690,17 +629,9 @@ button {
   }
 }
 
-/* animation: updown_animi linear 3s infinite alternate;
--webkit-animation: updown_animi linear 3s infinite alternate; */
-
-
-
-
 /*===================================
   GLOBAL CSS END
 ===================================*/
-
-
 
 
 /*===================================
@@ -888,7 +819,6 @@ header .wsus__header_right li .nice-select .option {
   margin-left: 5px;
 }
 
-
 .main_menu .navbar-nav .nav-item .nav-link:hover,
 .main_menu .navbar-nav .nav-item .nav-link.active {
   color: var(--colorPrimary);
@@ -972,7 +902,6 @@ header .wsus__header_right li .nice-select .option {
 .main_menu .wsus__droap_menu li a.active::after {
   opacity: 1;
   height: 20px;
-  left: 0px;
 }
 
 .main_menu .nav-item:hover .wsus__droap_menu {
@@ -1851,7 +1780,6 @@ header .wsus__header_right li .nice-select .option {
 /* project end */
 
 
-
 /* pricing start */
 
 .wsus_pricing_item {
@@ -2282,7 +2210,7 @@ header .wsus__header_right li .nice-select .option {
 }
 
 .wsus__footer_contant form input {
-  padding: 13px 20px;
+  padding: 13px 60px 13px 20px;
 }
 
 .wsus__footer_contant form button {
@@ -2974,7 +2902,6 @@ header .wsus__header_right li .nice-select .option {
   opacity: 1;
   bottom: 20px;
 }
-
 
 .wsus__case_studies_item_text .title_2 {
   color: var(--colorWhite);
@@ -4067,7 +3994,6 @@ header .wsus__header_right li .nice-select .option {
 /*===================================
   HOME PAGE 3 START
 ===================================*/
-
 
 /* main menu start */
 
@@ -5770,7 +5696,6 @@ header .wsus__header_right li .nice-select .option {
 ===================================*/
 
 
-
 /*===================================
   PORTFOLIO DETAILS START
 ===================================*/
@@ -5917,7 +5842,6 @@ header .wsus__header_right li .nice-select .option {
 ===================================*/
 
 
-
 /*===================================
   PHOTO GALLERY START
 ===================================*/
@@ -5964,15 +5888,6 @@ header .wsus__header_right li .nice-select .option {
 
 .wsus__photo_gallery_item .play_btn::after {
   background: var(--colorWhite);
-}
-
-.wsus__photo_gallery_item .play_btn:hover {
-  color: var(--colorWhite);
-  background: var(--colorSecondary);
-}
-
-.wsus__photo_gallery_item .play_btn:hover::after {
-  background: var(--colorSecondary);
 }
 
 /*===================================
@@ -6512,7 +6427,6 @@ header .wsus__header_right li .nice-select .option {
 /*===================================
   EVENT DETAILS END
 ===================================*/
-
 
 
 /*===================================
@@ -7250,7 +7164,6 @@ header .wsus__header_right li .nice-select .option {
   top: -2px;
 }
 
-
 .wsus__career_item p {
   font-size: 15px;
   line-height: 26px;
@@ -7301,7 +7214,6 @@ header .wsus__header_right li .nice-select .option {
 /*===================================
   CAREER PAGE END
 ===================================*/
-
 
 
 /*===================================
@@ -7689,7 +7601,6 @@ header .wsus__header_right li .nice-select .option {
   justify-content: end;
   color: rgba(23, 23, 24, 0.50);
 }
-
 
 .wsus__checkout_order_payment {
   padding-bottom: 30px;
@@ -9684,23 +9595,4 @@ header .wsus__header_right li .nice-select .option {
 
 /*===================================
   DASHBOARD END
-===================================*/
-
-
-
-
-
-
-
-
-
-
-/*===================================
-  HOME START
-===================================*/
-
-
-
-/*===================================
-  HOME END
 ===================================*/

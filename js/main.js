@@ -2,7 +2,6 @@ $(function () {
 
     "use strict";
 
-
     //=======MENU FIX======
     if ($(window).scrollTop() > 1) {
         if ($('.main_menu').offset() != undefined) {
@@ -42,15 +41,6 @@ $(function () {
 
     //=======COUNTER JS======
     $('.count').countUp();
-
-
-
-
-
-
-
-
-
 
 
     //=======BANNER BRAND JS======
@@ -192,7 +182,6 @@ $(function () {
     });
 
 
-
     //=======TESTIMONIAL JS======
     $('.testimonial_slider').slick({
         slidesToShow: 3,
@@ -236,8 +225,6 @@ $(function () {
     });
 
 
-
-
     //=======TEAM 2 JS======
     $('.team_2_slider').slick({
         slidesToShow: 4,
@@ -279,7 +266,6 @@ $(function () {
             }
         ]
     });
-
 
 
     //=======TESTIMONIAL 2 JS======
@@ -430,7 +416,6 @@ $(function () {
     });
 
 
-
     //=======SERVICE 4 JS======
     $('.service_4_slider').slick({
         slidesToShow: 3,
@@ -471,10 +456,6 @@ $(function () {
             }
         ]
     });
-
-
-
-
 
 
     //=======PROJECT 2 JS======
@@ -559,7 +540,6 @@ $(function () {
     });
 
 
-
     //=======BRAND 2 JS======
     $('.brand_2_slider').slick({
         slidesToShow: 6,
@@ -600,7 +580,6 @@ $(function () {
             }
         ]
     });
-
 
 
     //=======BARFILLER JS======
@@ -658,14 +637,7 @@ $(function () {
     });
 
 
-
-
-
-
-
-
-
-
+    //=====SCROLL_BAR========
     var btn = $('#button');
 
     $(window).scroll(function () {
@@ -682,28 +654,29 @@ $(function () {
     });
 
 
+    //=====CURSOR ANIMATION========
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    });
+
+    document.addEventListener('click', e => {
+        cursor.classList.add("expand");
+        setTimeout(() => {
+            cursor.classList.remove("expand");
+        }, 500);
+    });
 
 
-
-
-
-
-
+    //=====WOW ANIMATION========
+    new WOW().init();
 
 
     //=======SMALL DEVICE MENU ICON======
     $(".navbar-toggler").on("click", function () {
         $(".navbar-toggler").toggleClass("show");
     });
-
-
-
-
-
-
-
-
-
 
 
 });
